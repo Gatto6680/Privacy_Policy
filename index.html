@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>سياسة الخصوصية | Gattoteach</title>
+
+    <meta name="description" content="سياسة الخصوصية الخاصة بـ Gattoteach لخدمات تصميم المواقع والتطبيقات والحلول الرقمية.">
+
+    <!-- Alexandria Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        :root {
+            --blue: #0757b8;
+            --dark-blue: #063b7a;
+            --light-blue: #eef6ff;
+            --yellow: #ffc928;
+            --yellow-dark: #e9ae00;
+            --white: #ffffff;
+            --text: #1b2b40;
+            --muted: #68778a;
+            --border: #e5edf6;
+            --shadow: 0 20px 55px rgba(7, 87, 184, 0.10);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Alexandria", sans-serif;
+            background: #f7faff;
+            color: var(--text);
+            line-height: 1.9;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: rgba(255,255,255,.96);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+        }
+
+        .nav {
+            max-width: 1150px;
+            margin: auto;
+            padding: 17px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--blue);
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--yellow-dark);
+        }
+
+        .nav-label {
+            font-size: 12px;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background:
+                radial-gradient(circle at 10% 20%,
+                rgba(255,201,40,.16),
+                transparent 25%),
+                linear-gradient(135deg,
+                #063b7a 0%,
+                #0757b8 60%,
+                #0874df 100%);
+
+            color: white;
+            padding: 85px 20px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            border: 55px solid rgba(255,255,255,.05);
+            border-radius: 50%;
+            left: -100px;
+            bottom: -180px;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border: 35px solid rgba(255,201,40,.08);
+            border-radius: 50%;
+            right: -80px;
+            top: -80px;
+        }
+
+        .hero-inner {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,.12);
+            border: 1px solid rgba(255,255,255,.20);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 11px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            line-height: 1.35;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: var(--yellow);
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: auto;
+            color: rgba(255,255,255,.88);
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .updated {
+            margin-top: 25px;
+            font-size: 10px;
+            color: rgba(255,255,255,.62);
+        }
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        main {
+            max-width: 1000px;
+            margin: -45px auto 80px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .content {
+            background: var(--white);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            padding: 50px;
+        }
+
+        .intro {
+            background: var(--light-blue);
+            border-right: 4px solid var(--yellow);
+            padding: 22px 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            font-size: 13px;
+            color: #536276;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        .section {
+            padding: 28px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin-bottom: 15px;
+        }
+
+        .number {
+            min-width: 38px;
+            height: 38px;
+            background: var(--yellow);
+            color: #15243a;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 12px;
+        }
+
+        h2 {
+            color: var(--dark-blue);
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+        .section p {
+            color: #536276;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 12px;
+        }
+
+        li {
+            position: relative;
+            padding-right: 25px;
+            margin-bottom: 10px;
+            color: #536276;
+            font-size: 13px;
+        }
+
+        li::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: var(--yellow);
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 12px;
+        }
+
+        /* =========================
+           DATA CARDS
+        ========================= */
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .data-card {
+            background: #fbfdff;
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: .3s ease;
+        }
+
+        .data-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(7,87,184,.08);
+        }
+
+        .icon {
+            width: 45px;
+            height: 45px;
+            background: var(--light-blue);
+            color: var(--blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            font-size: 19px;
+        }
+
+        .data-card strong {
+            display: block;
+            color: var(--dark-blue);
+            font-size: 12px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            margin-top: 40px;
+            background: linear-gradient(135deg,
+                #063b7a,
+                #0757b8);
+
+            color: white;
+            border-radius: 24px;
+            padding: 42px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: "";
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            border: 35px solid rgba(255,255,255,.05);
+            border-radius: 50%;
+            left: -70px;
+            top: -80px;
+        }
+
+        .contact-icon {
+            width: 55px;
+            height: 55px;
+            background: var(--yellow);
+            color: var(--dark-blue);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 21px;
+            position: relative;
+        }
+
+        .contact h2 {
+            color: white;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .contact p {
+            color: rgba(255,255,255,.82);
+            font-size: 12px;
+            max-width: 600px;
+            margin: 0 auto 28px;
+            position: relative;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 205px;
+            background: rgba(255,255,255,.10);
+            border: 1px solid rgba(255,255,255,.16);
+            color: white;
+            text-decoration: none;
+            padding: 13px 16px;
+            border-radius: 14px;
+            text-align: right;
+            transition: .3s ease;
+            backdrop-filter: blur(8px);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-4px);
+            background: rgba(255,255,255,.17);
+        }
+
+        .contact-item-icon {
+            width: 42px;
+            height: 42px;
+            background: white;
+            color: var(--blue);
+            border-radius: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+            flex-shrink: 0;
+        }
+
+        .contact-item small {
+            display: block;
+            font-size: 9px;
+            color: rgba(255,255,255,.65);
+            margin-bottom: 2px;
+        }
+
+        .contact-item strong {
+            display: block;
+            font-size: 11px;
+            direction: ltr;
+        }
+
+        .contact-item.whatsapp .contact-item-icon {
+            color: #25D366;
+        }
+
+        .contact-item.email .contact-item-icon {
+            color: #0757b8;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #062f61;
+            color: rgba(255,255,255,.65);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 10px;
+        }
+
+        footer strong {
+            color: var(--yellow);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            .nav {
+                padding: 15px 18px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .nav-label {
+                font-size: 9px;
+            }
+
+            .hero {
+                padding: 65px 20px 85px;
+            }
+
+            .content {
+                padding: 30px 22px;
+                border-radius: 18px;
+            }
+
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 17px;
+            }
+
+            .section p,
+            li {
+                font-size: 12px;
+            }
+
+            .contact {
+                padding: 32px 18px;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .contact-item {
+                width: 100%;
+                min-width: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="nav">
+
+        <div class="logo">
+            Gatto<span>teach</span>
+        </div>
+
+        <div class="nav-label">
+            سياسة الخصوصية
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <div class="badge">
+            الخصوصية والأمان أولاً
+        </div>
+
+        <h1>
+            سياسة <span>الخصوصية</span>
+        </h1>
+
+        <p>
+            نحرص في Gattoteach على احترام خصوصيتك وحماية المعلومات
+            التي تشاركها معنا عند التواصل أو طلب خدماتنا الرقمية.
+        </p>
+
+        <div class="updated">
+            آخر تحديث: أكتوبر 2026
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTENT
+========================= -->
+
+<main>
+
+    <div class="content">
+
+        <div class="intro">
+
+            تم إعداد هذه السياسة لتوضيح نوع المعلومات التي قد نجمعها منك،
+            وكيف نستخدمها ونحافظ عليها عند تواصلك مع Gattoteach للحصول
+            على خدمات تصميم المواقع والتطبيقات والحلول الرقمية.
+
+        </div>
+
+
+        <!-- 01 -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div class="number">
+                    01
+                </div>
+
+                <h2>
+                    المعلومات التي نجمعها
+                </h2>
+
+            </div>
+
+            <p>
+                عند تواصلك معنا أو طلب إحدى خدماتنا، قد نطلب منك بعض
+                المعلومات الأساسية اللازمة للتواصل معك وفهم احتياجاتك.
+            </p>
+
+            <div class="data-grid">
+
+                <div class="data-card">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <strong>
+                        الاسم
+                    </strong>
+
+                </div>
+
+
+                <div class="data-card">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <strong>
+                        البريد الإلكتروني
+                    </strong>
+
+                </div>
+
+
+                <div class="data-card">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <strong>
+                        رقم الهاتف
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <p style="margin-top:20px;">
+
+                وقد نحتاج كذلك إلى معلومات مرتبطة بالمشروع الذي ترغب
+                في تنفيذه، مثل وصف الخدمة أو المتطلبات الفنية التي
+                تختار مشاركتها معنا.
+
+            </p>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div class="number">
+                    02
+                </div>
+
+                <h2>
+                    كيف نستخدم معلوماتك؟
+                </h2>
+
+            </div>
+
+            <p>
+                نستخدم المعلومات التي تقدمها لنا للأغراض المتعلقة بالخدمة،
+                ومنها:
+            </p>
+
+            <ul>
+
+                <li>
+                    التواصل معك والرد على استفساراتك.
+                </li>
+
+                <li>
+                    فهم احتياجات مشروعك وتقديم العرض المناسب.
+                </li>
+
+                <li>
+                    تنفيذ الخدمات الرقمية التي تطلبها.
+                </li>
+
+                <li>
+                    تحسين جودة خدماتنا وتجربة التواصل مع العملاء.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div class="number">
+                    03
+                </div>
+
+                <h2>
+                    حماية معلوماتك
+                </h2>
+
+            </div>
+
+            <p>
+
+                نحرص على التعامل مع معلوماتك بطريقة مسؤولة واتخاذ
+                الإجراءات المناسبة للمساعدة في حمايتها من الوصول غير
+                المصرح به أو الاستخدام غير المشروع.
+
+            </p>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div class="number">
+                    04
+                </div>
+
+                <h2>
+                    مشاركة المعلومات
+                </h2>
+
+            </div>
+
+            <p>
+
+                لا نقوم ببيع معلوماتك الشخصية أو المتاجرة بها.
+                ولا نشاركها مع أطراف أخرى إلا عندما يكون ذلك ضروريًا
+                لتقديم الخدمة المطلوبة أو عندما يكون الإفصاح مطلوبًا
+                بموجب القانون.
+
+            </p>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div class="number">
+                    05
+                </div>
+
+                <h2>
+                    مدة الاحتفاظ بالمعلومات
+                </h2>
+
+            </div>
+
+            <p>
+
+                نحتفظ بالمعلومات فقط للمدة التي تكون فيها ضرورية
+                للتواصل معك أو تنفيذ الخدمة أو للوفاء بالالتزامات
+                القانونية ذات الصلة.
+
+            </p>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div class="number">
+                    06
+                </div>
+
+                <h2>
+                    خصوصية الأطفال
+                </h2>
+
+            </div>
+
+            <p>
+
+                خدمات Gattoteach موجهة بشكل أساسي للأفراد والعملاء
+                الذين يطلبون خدمات رقمية. لا نطلب عمدًا بيانات شخصية
+                من الأطفال دون السن القانوني إلا من خلال ولي الأمر
+                أو وفق المتطلبات القانونية المعمول بها.
+
+            </p>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div class="number">
+                    07
+                </div>
+
+                <h2>
+                    حقوقك
+                </h2>
+
+            </div>
+
+            <p>
+
+                يمكنك التواصل معنا لطلب معرفة المعلومات الشخصية التي
+                نحتفظ بها عنك، أو طلب تصحيحها أو حذفها، متى كان ذلك
+                ممكنًا ووفقًا للقوانين المعمول بها.
+
+            </p>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div class="number">
+                    08
+                </div>
+
+                <h2>
+                    تحديث سياسة الخصوصية
+                </h2>
+
+            </div>
+
+            <p>
+
+                قد نقوم بتحديث سياسة الخصوصية من وقت لآخر بما يتناسب
+                مع تطور خدماتنا أو المتطلبات القانونية. وسيتم عرض
+                تاريخ آخر تحديث في أعلى هذه الصفحة.
+
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <div class="contact">
+
+            <div class="contact-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h2>
+                تواصل معنا
+            </h2>
+
+            <p>
+
+                لديك استفسار أو ترغب في معرفة المزيد عن خدمات Gattoteach؟
+                يسعدنا التواصل معك والإجابة عن استفساراتك.
+
+            </p>
+
+
+            <div class="contact-links">
+
+
+                <!-- WhatsApp -->
+
+                <a
+                    href="https://wa.me/249969427904"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-item whatsapp"
+                >
+
+                    <span class="contact-item-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </span>
+
+                    <span>
+
+                        <small>
+                            واتساب
+                        </small>
+
+                        <strong>
+                            +249 969 427 904
+                        </strong>
+
+                    </span>
+
+                </a>
+
+
+                <!-- Phone -->
+
+                <a
+                    href="tel:+249969427904"
+                    class="contact-item"
+                >
+
+                    <span class="contact-item-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+
+                    <span>
+
+                        <small>
+                            اتصل بنا
+                        </small>
+
+                        <strong>
+                            +249 969 427 904
+                        </strong>
+
+                    </span>
+
+                </a>
+
+
+                <!-- Email -->
+
+                <a
+                    href="mailto:gatto6680@gmail.com"
+                    class="contact-item email"
+                >
+
+                    <span class="contact-item-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+
+                    <span>
+
+                        <small>
+                            البريد الإلكتروني
+                        </small>
+
+                        <strong>
+                            gatto6680@gmail.com
+                        </strong>
+
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div>
+
+        © 2026
+        <strong>Gattoteach</strong>
+        — جميع الحقوق محفوظة.
+
+    </div>
+
+    <div style="margin-top:7px;">
+
+        Privacy Policy
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
